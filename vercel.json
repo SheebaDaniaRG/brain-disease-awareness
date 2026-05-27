@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "brain_awareness/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "brain_awareness/wsgi.py"
+    }
+  ]
+}
