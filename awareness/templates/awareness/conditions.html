@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="mb-4">
+
+Brain Conditions
+
+</h1>
+
+{% for disease in diseases %}
+
+<div class="card mb-4">
+
+<div class="card-body">
+
+<h3>
+
+{{ disease.name }}
+
+</h3>
+
+<p>
+
+{{ disease.description }}
+
+</p>
+
+<strong>
+
+Symptoms
+
+</strong>
+
+<ul>
+
+{% for symptom in disease.symptom_list %}
+
+<li>
+
+{{ symptom }}
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>BrainCare</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;500&display=swap"
+rel="stylesheet">
+
+<link
+href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+<div class="grain"></div>
+
+<nav>
+
+<div class="logo">
+
+BrainCare
+
+</div>
+
+<div>
+
+<a href="/">Home</a>
+
+<a href="/knowledge">
+
+Knowledge
+
+</a>
+
+<a href="/get-involved">
+
+Support
+
+</a>
+
+</div>
+
+</nav>
+
+
+{% block content %}
+{% endblock %}
+
+
+<script
+src="https://unpkg.com/aos@2.3.4/dist/aos.js">
+</script>
+
+<script>
+
+AOS.init({
+
+duration:1200
+
+})
+
+</script>
+
+</body>
+
+</html>
